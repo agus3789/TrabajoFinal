@@ -136,7 +136,7 @@ router.get('/listarc', function(req, res, next) {
     cod_postal:req.body.cod_postal,
     grupo_sang_alumno:req.body.grupo_sang_alumno  
   };
-  bd.query("select * from alumnos where cod_postal='7601' and grupo_sang_alumno='rh'",con, function(error,filas){
+  bd.query("select * from alumnos where cod_postal='7601' and grupo_sang_alumno='rh-'",con, function(error,filas){
         if (error) {            
             console.log('error en el listado');
             return;
